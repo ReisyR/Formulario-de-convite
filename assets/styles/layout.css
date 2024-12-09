@@ -16,8 +16,7 @@ main {
 }
 
 aside {
-    padding: 5rem;
-    background-color: antiquewhite;
+    padding: 2rem;
 
     & .main-container {
         max-width: 21rem;

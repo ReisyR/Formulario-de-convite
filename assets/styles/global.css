@@ -76,5 +76,8 @@
 
 body {
     overflow: hidden;
+    background-color: var(--shape-body);
     font-family: var(--font-open-sans);
+    color: var(--text-body);
+
 }

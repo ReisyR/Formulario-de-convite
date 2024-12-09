@@ -1,0 +1,24 @@
+aside {
+    background-image: url(/assets/images/Background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+aside .intro {
+    width: 2.86rem;
+    height: 3rem;
+}
+
+aside h1 {
+    margin-top: 1rem;
+    font-family: var(--font-leckerli-one);
+    font-size: var(--font-size-logo);
+    font-weight: var(--font-weight-logo);
+    color: var(--pink);
+}
+
+aside p {
+    margin-top: 0.25rem;
+    font-family: var(--font-baloo-2);
+    font-size: var(--font-size-body-md);
+}
