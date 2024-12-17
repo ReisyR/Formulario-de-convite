@@ -36,9 +36,68 @@
 
     <main>
         <div class="main-container">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, aliquid perspiciatis ab asperiores explicabo nostrum possimus porro, ea qui voluptate adipisci labore eligendi odit? Veritatis et assumenda non dolore alias?  main
+            <section class="intro">
+                <h1>Crie seu convite</h1>
+                <div id="icon-calendar">
+                    <img src="/assets/icons/calendar.svg" alt="Ícone de calendário">
+                    <p><strong>Sobre o evento</strong></p>
+                </div>
+
+                <form>
+                    <fieldset class="child-intro">
+                        <legend>Título</legend>
+                    
+                        <div class="input-title">
+                            <input 
+                            id="name" 
+                            type="text" 
+                            placeholder="Nome do evento">
+                        </div>
+                    
+                        <div class="input-initial">
+                            <div class="date-group">
+                                <legend>Início</legend>
+                                <input 
+                                id="initial-date" 
+                                type="date">
+                            </div>
+
+                            <div id="date2" class="date-group">
+                                <legend>Fim</legend>
+                                <input 
+                                id="final-date"
+                                type="date">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <form class="form-container">
+                    <fieldset class="option-group">
+                        <legend>Tipo</legend>
+                        <div class="options">
+                            <input 
+                            type="radio" 
+                            id="presencial" 
+                            name="modalidade" 
+                            value="presencial" 
+                            checked>
+                            <label for="presencial" class="option-label"><img id="icon-local" src="/assets/icons/building-2.svg" alt="icone do local">Presencial</label>
+                            
+                            <input 
+                            type="radio" 
+                            id="online" 
+                            name="modalidade" 
+                            value="online">
+                            <label for="online" class="option-label"><img id="icon-video" src="/assets/icons/video.svg" alt="icone de video">Online</label>
+                        </div>
+                    </fieldset>
+                </form>
+                
+            </section>
         </div>
     </main>
+        
   </div>
 </body>
 </html>

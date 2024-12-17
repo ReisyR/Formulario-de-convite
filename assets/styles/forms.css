@@ -1,0 +1,33 @@
+@import url(fields/index.css);
+
+form {
+    margin-top: 1.5rem;
+}
+
+fieldset {
+    border: none;
+
+    display: grid;
+    gap: 1.5rem;
+
+    
+}
+
+legend {
+    font-size: var(--font-size-body-sm);
+    color: var(--text-body);
+    margin-bottom: .5rem;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="radio"] + label {
+    box-sizing: border-box;
+    
+    color: var(--text-color);
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.5rem;
+    
+    padding: 0.5rem;
+}

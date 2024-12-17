@@ -1,0 +1,87 @@
+main {
+    color: var(--text-heading);
+}
+
+
+#icon-calendar {
+    display: flex;
+    gap: 0.5rem; 
+    margin-top: 2.5rem;
+}
+
+#icon-calendar img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.input-title input {
+    width: 35rem;
+}
+
+.input-initial {
+    display: flex;
+    width: 17rem;
+}
+
+.date-group {
+    flex-direction: column;
+}
+
+.date-group legend {
+    width: 17rem;
+}
+
+#date2 {
+    margin-left: 0.625rem;
+}
+
+.options {
+    display: inline-flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+
+    background-color: var(--input-base);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--input-stroke);
+
+    height: 3.4rem;
+    width: 17rem;
+
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-self: center;
+
+    width: 8.125rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.option-label:hover {
+    background-color: var(--input-placeholder); 
+    transform: scale(1.03);
+}
+
+input[type="radio"]:checked + label {
+    background-color: var(--brand-dark);
+    font-weight: bold;
+}
+
+#icon-local, #icon-video {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+input[type="radio"] {
+    display: none;
+}
