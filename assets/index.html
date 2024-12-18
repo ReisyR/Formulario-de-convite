@@ -59,14 +59,16 @@
                                 <legend>Início</legend>
                                 <input 
                                 id="initial-date" 
-                                type="date">
+                                type="date"
+                                lang="pt-BR">
                             </div>
 
                             <div id="date2" class="date-group">
                                 <legend>Fim</legend>
                                 <input 
                                 id="final-date"
-                                type="date">
+                                type="date"
+                                lang="pt-BR">
                             </div>
                         </div>
                     </fieldset>
@@ -91,9 +93,24 @@
                             value="online">
                             <label for="online" class="option-label"><img id="icon-video" src="/assets/icons/video.svg" alt="icone de video">Online</label>
                         </div>
+
+                        <div class="local">
+                            <legend>Local</legend>
+                            <input 
+                            id="local"
+                            type="text"
+                            placeholder="Link ou endereço">
+                        </div>
                     </fieldset>
+                    
+                    <div class="description">
+                        <legend>Descrição</legend>
+                        <textarea 
+                        id="description"
+                        type="text"
+                        placeholder="Escreva os detalhes do evento"></textarea>
+                    </div>
                 </form>
-                
             </section>
         </div>
     </main>

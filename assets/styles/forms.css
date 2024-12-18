@@ -1,7 +1,7 @@
 @import url(fields/index.css);
 
 form {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 fieldset {
@@ -9,8 +9,6 @@ fieldset {
 
     display: grid;
     gap: 1.5rem;
-
-    
 }
 
 legend {
@@ -19,11 +17,10 @@ legend {
     margin-bottom: .5rem;
 }
 
+textarea,
 input[type="text"],
 input[type="date"],
 input[type="radio"] + label {
-    box-sizing: border-box;
-    
     color: var(--text-color);
     background-color: var(--input-base);
     border: 1px solid var(--input-stroke);
