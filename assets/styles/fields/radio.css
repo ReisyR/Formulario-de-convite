@@ -1,0 +1,42 @@
+.event-options legend {
+    margin-bottom: 1rem;
+}
+
+.input-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.3rem, 1fr));
+}
+
+.radio-inner {
+    justify-items: center;
+    margin-bottom: 1.5rem;
+    
+    background-color: var(--shape-body);
+    width: 8.3rem;
+    height: 6.4rem;
+    padding: 0.4rem;
+    border-radius: 10%;
+    
+    transition: transform 0.2s;
+
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.radio-inner label {
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+    font-weight: normal;
+    text-align: center;
+    
+}
+
+.radio-inner:hover {
+    transform: scale(1.1);
+}
+
+.radio-inner input:checked + label {
+    background-color: var(--brand-dark);
+    border: 1px solid var(--brand-light);
+}

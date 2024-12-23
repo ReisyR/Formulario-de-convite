@@ -29,14 +29,18 @@
     
     transition: transform 0.2s;
     cursor: pointer;
+
+    margin-bottom: 1.75rem;
 }
 
 .circle:hover {
-    transform: scale(1.2);
+    transform: scale(1.6);
 }
 
 .color-input:checked + .circle {
     border: 0.2rem solid rgba(21, 21, 21, 0.344);
 
-    transform: scale(1.5);
+    transform: scale(1.6);
 }
+
+

@@ -1,13 +1,2 @@
-input, textarea, select {
-    appearance: none;
-    width: 100%;
-    border-radius: .3rem;
-    border: 1px solid;
-
-    padding: .40rem;
-}
-
-label {
-    display: block;
-    margin-bottom: .25rem;
-}
+@import url(input.css);
+@import url(radio.css);
