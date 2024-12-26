@@ -1,0 +1,29 @@
+.icon-contacts {
+    display: flex;
+    gap: 0.5rem; 
+    margin-top: 2.5rem;
+}
+
+.icon-contacts img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: -0.4rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container {
+    display: flex;
+}
+
+.contact-email input {
+    margin-inline-end: 1rem;
+    width: 17rem;
+    background-color: var(--shape-body);
+    border: 1px solid var(--input-stroke);
+}
+
+.contact-tel input {
+    width: 17rem;
+    background-color: var(--shape-body);
+    border: 1px solid var(--input-stroke);
+}
