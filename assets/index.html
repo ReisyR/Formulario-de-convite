@@ -49,24 +49,44 @@
                 <form>
                     <fieldset class="child-intro">
                         <legend>Título</legend>
-                    
+                
                         <div class="input-title">
-                            <input id="name" type="text" placeholder="Nome do evento">
+                            <input 
+                                id="name" 
+                                type="text" 
+                                placeholder="Nome do evento" 
+                                required 
+                                minlength="3" 
+                            >
+                            <span class="error-message">Por favor, insira ao menos 3 caracteres.</span>
                         </div>
-                        
+                
                         <div class="input-initial">
                             <div class="date-group">
                                 <legend>Início</legend>
-                                <input id="initial-date" type="date" lang="pt-BR">
+                                <input 
+                                    id="initial-date" 
+                                    type="date" 
+                                    lang="pt-BR" 
+                                    required 
+                                >
+                                <span class="error-message">Escolha uma data de início válida.</span>
                             </div>
-                        
+                
                             <div id="date2" class="date-group">
                                 <legend>Fim</legend>
-                                <input id="final-date" type="date" lang="pt-BR">
+                                <input 
+                                    id="final-date" 
+                                    type="date" 
+                                    lang="pt-BR" 
+                                    required 
+                                >
+                                <span class="error-message">Escolha uma data de término válida.</span>
                             </div>
                         </div>
                     </fieldset>
                 </form>
+                
 
                 <form class="form-container">
                     <fieldset class="option-group">
@@ -403,9 +423,46 @@
                                 <label for="tel"></label>
                             </div>
                         </div>
-                   </fieldset>
-                </form>
+                        <hr>
+                    </fieldset>
+                    
+                    <div class="checkbox-finally"> 
+                        <div class="checkbox-terms">
+                            <div class="checkbox-image">
+                                    
+                            </div>
+                                <input type="checkbox" name="terms" id="terms">
+                            
+                                <label for="terms">Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></label>
+                            </div>
+                            
+                            <div class="checkbox-updates-email">
+                                <div class="checkbox-image">
+                                    
+                                </div>
+                                <input type="checkbox" name="updates-email" id="updates-email">
+                                
+                                <label for="updates-email">Aceito receber atualizações e promoções por e-mail</label>
+                            </div>
 
+                        <div class="checkbox-updates-sms">
+                            <div class="checkbox-image">
+                                
+                            </div>
+                            <input type="checkbox" name="updates-sms" id="updates-sms">
+                            
+                            <label for="updates-sms">Aceito receber atualizações e promoções por SMS</strong></label>
+                        </div>
+                    </div>
+
+                    <div class="button-invitation">
+                        <button class="button-ticket">
+                            <img id="icon-invitation" src="/assets/icons/ticket.svg" alt="ícone de ticket">
+                            Gerar convite
+                        </button>
+                    </div>                    
+                    
+                </form>
             </section>
         </div>
     </main>

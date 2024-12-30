@@ -12,3 +12,24 @@ label {
     margin-bottom: .25rem;
 }
 
+input[type="text"],
+input[type="date"] {
+    height: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+input:invalid {
+    border: 1px solid red; 
+}
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 0.75rem;
+    margin-top: 0.2rem;
+}
+
+input:invalid + .error-message {
+    display: block;
+}
+
