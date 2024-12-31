@@ -16,7 +16,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+
     <link rel="stylesheet" href="styles/index.css"> 
+    <link rel="stylesheet" href="styles/fields/index.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Leckerli+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
@@ -58,7 +60,7 @@
                                 required 
                                 minlength="3" 
                             >
-                            <span class="error-message">Por favor, insira ao menos 3 caracteres.</span>
+                            <span class="error-message"><img id="error-icon" src="/assets/icons/circle-alert.svg" alt="ícone de erro">Por favor, insira ao menos 3 caracteres.</span>
                         </div>
                 
                         <div class="input-initial">
@@ -70,7 +72,7 @@
                                     lang="pt-BR" 
                                     required 
                                 >
-                                <span class="error-message">Escolha uma data de início válida.</span>
+                                <span class="error-message"><img id="error-icon" src="/assets/icons/circle-alert.svg" alt="ícone de erro">Escolha uma data de início válida.</span>
                             </div>
                 
                             <div id="date2" class="date-group">
@@ -81,7 +83,7 @@
                                     lang="pt-BR" 
                                     required 
                                 >
-                                <span class="error-message">Escolha uma data de término válida.</span>
+                                <span class="error-message"><img id="error-icon" src="/assets/icons/circle-alert.svg" alt="ícone de erro">Escolha uma data de término válida.</span>
                             </div>
                         </div>
                     </fieldset>
@@ -377,7 +379,6 @@
                         name="file"
                         type="file">
                         <label for="file"><img id="upload" src="/assets/icons/upload.svg" alt="icone de upload">Selecionar</label>
-                        <span class="file-name">Nenhum arquivo selecionado</span>
                     </div>
                     
                 </div>
@@ -409,20 +410,28 @@
                                 placeholder="exemplo@email.com"
                                 name="email" 
                                 id="email"
-                                type="email">
+                                type="email"
+                                required>
+                                <span class="error-message"><img id="error-icon" src="/assets/icons/circle-alert.svg" alt="ícone de erro">Insira um E-mail válido.</span>
                                 <label for="email"></label>
                             </div>
 
                             <div class="contact-tel">
                                 <legend>Telefone</legend>
                                 <input 
-                                type="tel" 
-                                name="tel" 
-                                id="tel"
-                                placeholder="(99) 99999-9999">
+                                    type="tel" 
+                                    name="tel" 
+                                    id="tel" 
+                                    placeholder="(99) 99999-9999" 
+                                    required 
+                                    pattern="\(\d{2}\) \d{5}-\d{4}" 
+                                >
+                                <span class="error-message">
+                                    <img id="error-icon" src="/assets/icons/circle-alert.svg" alt="ícone de erro">
+                                    Insira um número válido no formato (99) 99999-9999.
+                                </span>
                                 <label for="tel"></label>
                             </div>
-                        </div>
                         <hr>
                     </fieldset>
                     

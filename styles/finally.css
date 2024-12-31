@@ -26,6 +26,7 @@
     height: 3rem;
     background-color: var(--shape-body);
     border: 1px solid var(--input-stroke);
+    margin-bottom: 0.4rem;
 
     &:not(:placeholder-shown) {
         border: 1px solid var(--brand-light);
@@ -38,6 +39,7 @@
     height: 3rem;
     background-color: var(--shape-body);
     border: 1px solid var(--input-stroke);
+    margin-bottom: 0.4rem;
 
     &:not(:placeholder-shown) {
         border: 1px solid var(--brand-light);

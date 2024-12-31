@@ -126,6 +126,8 @@ input[type="radio"] {
     resize: none;
     margin-bottom: 3rem;
 
+    border: 1px solid var(--input-stroke);
+
     &:not(:placeholder-shown) {
         border: 1px solid var(--brand-light);
         background-color: var(--shape-buttom);
