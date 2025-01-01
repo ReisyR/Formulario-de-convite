@@ -1,7 +1,15 @@
 aside {
-    background-image: url(/assets/images/Background.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    position: relative;
+    height: 100vh;
+}
+
+aside .back-intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    object-fit: cover;
 }
 
 aside .intro {
